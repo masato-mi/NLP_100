@@ -10,4 +10,4 @@ tweet = re.compile(r"^@[a-zA-Z][a-zA-Z0-9]*") #正規表現:ユーザー名
 for line in sys.stdin:　# 標準入力をlineに入れながらfor文をまわし,
     mtweet = re.search(tweet, line) #tweetを探しだし
     if mtweet:　#マッチしたら出力
-    	print mtweet.group(0)
+    	print mtweet.group(0) #RTをの取り除いて出力する方法がわかりませんでした...
